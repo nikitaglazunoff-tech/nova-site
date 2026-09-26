@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#060708">
+  <title>NOVA — The Future of Driving</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader" aria-live="polite">
+    <div class="loader-brand">NOVA</div>
+    <div class="loader-kicker">LOADING EXPERIENCE</div>
+    <div class="loader-line"><span id="loadLine"></span></div>
+    <div id="loadPercent" class="loader-percent">0%</div>
+  </div>
+
+  <div class="noise"></div>
+  <div id="cursor" class="cursor"></div>
+
+  <header id="nav" class="nav">
+    <a class="brand" href="#top">NOVA<span>®</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#performance">Performance</a>
+      <a href="#technology">Technology</a>
+      <a href="#configurator">Configurator</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta magnetic" href="#configurator">Configure <span>↗</span></a>
+    <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="models">
+      <div id="scene" class="scene" aria-label="Interactive 3D vehicle"></div>
+      <div class="hero-vignette"></div>
+      <div class="hero-noise-grid"></div>
+      <div class="hero-copy">
+        <div class="eyebrow reveal">NOVA / 01 — A NEW ERA</div>
+        <h1 class="hero-title"><span>THE FUTURE</span><span>OF DRIVING</span></h1>
+        <p class="hero-description reveal">An electric grand tourer engineered around motion, intelligence and silence.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-light magnetic" href="#performance">Explore <span>↓</span></a>
+          <a class="button button-ghost magnetic" href="#configurator">Configure <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-meta"><span>FULL ELECTRIC</span><span>2026</span><span>01 / 06</span></div>
+      <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="section performance" id="performance">
+      <div class="section-label">02 / PERFORMANCE</div>
+      <div class="section-heading-block">
+        <div class="eyebrow">PURE PERFORMANCE</div>
+        <h2>Silence can<br><em>move fast.</em></h2>
+        <p>Instant torque, adaptive aerodynamics and a low centre of gravity turn every input into motion.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><div><strong data-value="650">0</strong><span>HP</span></div><small>DUAL MOTOR</small></div>
+        <div class="stat"><div><strong data-value="3.2">0</strong><span>SEC</span></div><small>0–100 KM/H</small></div>
+        <div class="stat"><div><strong data-value="320">0</strong><span>KM/H</span></div><small>TOP SPEED</small></div>
+        <div class="stat"><div><strong data-value="780">0</strong><span>KM</span></div><small>RANGE</small></div>
+      </div>
+    </section>
+
+    <section class="cinematic" id="motion">
+      <div class="cinematic-orb"></div>
+      <div class="cinematic-content">
+        <div class="eyebrow">03 / ENGINEERING</div>
+        <h2>ENGINEERED<br><em>FOR MOTION.</em></h2>
+        <p>Every surface has a purpose. Every detail is designed to reduce resistance and increase emotion.</p>
+      </div>
+      <div class="cinematic-line"></div>
+    </section>
+
+    <section class="section technology" id="technology">
+      <div class="section-heading wide-heading">
+        <div class="section-label">04 / TECHNOLOGY</div>
+        <h2>INTELLIGENCE<br><em>IN MOTION.</em></h2>
+      </div>
+      <div class="tech-grid">
+        <article class="tech-card magnetic"><span>01</span><h3>AI DRIVING</h3><p>Predictive assistance that continuously learns the road around you.</p><i>↗</i></article>
+        <article class="tech-card magnetic"><span>02</span><h3>SMART COCKPIT</h3><p>A calm digital environment with information exactly when you need it.</p><i>↗</i></article>
+        <article class="tech-card magnetic"><span>03</span><h3>ADAPTIVE SUSPENSION</h3><p>Real-time damping control for confident comfort at every speed.</p><i>↗</i></article>
+        <article class="tech-card magnetic"><span>04</span><h3>NEXT-GEN BATTERY</h3><p>High-density cells engineered for performance and long-distance travel.</p><i>↗</i></article>
+      </div>
+    </section>
+
+    <section class="section configurator" id="configurator">
+      <div class="configurator-intro">
+        <div class="section-label">05 / CONFIGURATOR</div>
+        <h2>MAKE IT<br><em>YOURS.</em></h2>
+        <p>Explore the visual character of NOVA. Change the finish and see the 3D vehicle respond in real time.</p>
+      </div>
+      <div class="configurator-panel">
+        <div class="control-group">
+          <div class="control-label">COLOR</div>
+          <div class="swatches">
+            <button class="swatch active magnetic" data-color="#0a0c0e" data-name="MATTE BLACK" style="--swatch:#0a0c0e" aria-label="Matte Black"></button>
+            <button class="swatch magnetic" data-color="#f2f1ed" data-name="PEARL WHITE" style="--swatch:#f2f1ed" aria-label="Pearl White"></button>
+            <button class="swatch magnetic" data-color="#9aa0a5" data-name="SILVER" style="--swatch:#9aa0a5" aria-label="Silver"></button>
+            <button class="swatch magnetic" data-color="#16304a" data-name="DARK BLUE" style="--swatch:#16304a" aria-label="Dark Blue"></button>
+            <button class="swatch magnetic" data-color="#8b1a20" data-name="RACING RED" style="--swatch:#8b1a20" aria-label="Racing Red"></button>
+          </div>
+          <div id="colorName" class="selection">MATTE BLACK</div>
+        </div>
+        <div class="control-group">
+          <div class="control-label">WHEELS</div>
+          <div class="segmented" data-group="wheels"><button class="active">AERO</button><button>SPORT</button><button>FORGED</button></div>
+        </div>
+        <div class="control-group">
+          <div class="control-label">INTERIOR</div>
+          <div class="segmented" data-group="interior"><button class="active">BLACK</button><button>WHITE</button><button>CARBON</button></div>
+        </div>
+        <div class="config-price"><span>EST. FROM</span><strong>$128,900</strong></div>
+        <a class="button button-light full magnetic" href="#contact">Book a test drive <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-label">06 / CONTACT</div>
+      <div class="contact-inner">
+        <div class="eyebrow">READY FOR THE NEXT ERA?</div>
+        <h2>MOVE<br><em>FORWARD.</em></h2>
+        <a class="button button-light magnetic" href="mailto:hello@nova.example">Book a test drive <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top"><a class="brand" href="#top">NOVA<span>®</span></a><span>© 2026 NOVA Automotive</span></div>
+    <div class="footer-links"><a href="#performance">Performance</a><a href="#technology">Technology</a><a href="#configurator">Configurator</a><a href="#contact">Contact</a></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
